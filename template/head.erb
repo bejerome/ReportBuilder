@@ -5,10 +5,33 @@
   <title><%= options[:report_title] %></title>
 
   <link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
-  <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet"> 
+  <%# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/> %>
+  <%# <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet"> %>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="template/assets/css/bootstrap.min.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+  <script src="template/assets/js/jquery-3.2.1.min.js"></script>
+ <script src="template/assets/js/bootstrap.min.js"></script>
+
+  <link rel ="stylesheet" href="template/assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- DataTables -->
+  <link rel= "stylesheet" href="template/assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link rel= "stylesheet" href="template/assets/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="template/assets/css/customestyle.css"> 
+
+
+<!-- DataTables -->
+
+
+<!-- Chart.js -->
+<script src="template/assets/js/Chart.min.js"></script>
 
   <% if options[:additional_css] %>
       <% if options[:additional_css] =~ /^http(|s):\/\/.*\.css$/ %>
