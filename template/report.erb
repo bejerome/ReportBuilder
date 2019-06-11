@@ -6,10 +6,8 @@
 
     <% errors = [] %>
 
-    <%# <% gid = 'g0' %> 
+    <% gid = 'g0' %> 
     <% features = groups.first['features'] %>
-
-    <%# <%= get('scenarios').result(binding) %>
   
     <div class="main_conainer">
      <main>
@@ -22,7 +20,7 @@
          <%= get('overview_charts').result(binding) %>
      
         <%= get('feature_overview').result(binding) %> 
-          <%# <%= get('features').result(binding) %>
+          <%= get('group_features').result(binding) %>
      
 
        
